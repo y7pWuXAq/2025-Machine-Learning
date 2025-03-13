@@ -1,0 +1,20 @@
+"""
+<모델별 사용가능한 하이퍼파라메터>
+ 1. LinearRegression, Ridge, Lasso
+  - 선형방정식에서 절편사용여부(기본값 True) : fit_intercept = [True, False]
+  - 예측값을 양수로 사용할지 여부(기본값 True) : positive = [True, False]
+ 
+ 2. GradentBoostingRegressor
+  - 트리 갯수(보통 50~1000 사이값 사용) : n_estimators = [50, 100]
+  - 트리 깊이(보통 3~10 사이값 사용) : max_depth = [None, 3, 10]
+  - 학습률(보폭)(보통 0.01~0.2 사이값 사용) : learning_rate = [0.01, 0.1, 0.2]
+ 
+ 3. HistGradientBoostingRegressor
+  - 트리 갯수(보통 50~1000 사이값 사용) : max_iter = [50, 100]
+  - 트리 깊이(보통 3~10 사이값 사용) : max_depth = [None, 3, 10]
+  - 학습률(보폭)(보통 0.01~0.2 사이값 사용) : learning_rate = [0.01, 0.1, 0.2]
+ 
+ 4. RandomForestRegressor, XGBRegressor
+  - 트리 갯수(보통 50~1000 사이값 사용) : n_estimators = [50, 100]
+  - 트리 깊이(보통 3~10 사이값 사용) : max_depth = [None, 3, 10]
+"""

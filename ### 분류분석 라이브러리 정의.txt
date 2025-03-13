@@ -1,0 +1,74 @@
+### 분류분석 라이브러리 정의
+# - 데이터를 읽기 위한 라이브러리
+import pandas as pd
+
+# - 수치 계산 라이브러리
+import numpy as np
+
+# - 시각화 라이브러리
+import matplotlib.pyplot as plt
+
+# - 히트맵 라이브러리
+import seaborn as sns
+
+# - 데이터 분류 라이브러리
+from sklearn.model_selection import train_test_split
+
+### 모델 라이브러리
+# - KNN 회귀모델 라이브러리
+from sklearn.neighbors import KNeighborsClassifier
+
+# - 로지스틱 레그레이션 모델 라이브러리
+from sklearn.linear_model import LogisticRegression
+
+# - DT 모델 라이브러리
+from sklearn.tree import DecisionTreeClassifier
+
+# - 랜덤포레스트 모델 라이브러리
+from sklearn.ensemble import RandomForestClassifier
+
+# - 엑스트라트리 모델 라이브러리
+from sklearn.ensemble import ExtraTreesClassifier
+
+# - 그레디언트부스트 모델 라이브러리
+from sklearn.ensemble import GradientBoostingClassifier
+
+# - 히스트그레디언트부스트 모델 라이브러리
+from sklearn.ensemble import HistGradientBoostingClassifier
+
+# - XBG 모델 라이브러리
+from xgboost import XGBClassifier
+
+# - 하이퍼 파라미터 튜닝 모델(클래스) 라이브러리
+from sklearn.model_selection import GridSearchCV
+
+# - 데이터 스케일링 라이브러리
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import RobustScaler
+
+# - 상관관계 검증 라이브러리
+from scipy.stats import spearmanr # 스피어만
+from scipy.stats import pearsonr # 피어슨
+
+# - 오차행렬 및 오차행렬도 라이브러리 정의하기
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import ConfusionMatrixDisplay
+
+# - 평가 라이브러리 정의 
+from sklearn.metrics import accuracy_score # 정확도
+from sklearn.metrics import precision_score # 정밀도
+from sklearn.metrics import recall_score # 재현률
+from sklearn.metrics import f1_score # f1_score
+
+### 경고(오류는 아님) 메시지 없애기
+# - 사이킷런 버전에 따라 오류가 아니니 안내(경고)메시지가 자주 나타남
+# - 안내(경고) 메시지 없이 실행할 수 있도록 처리
+from sklearn import set_config
+set_config(display="text")
+
+# - 한글처리
+plt.rc("font", family="Malgun Gothic")
+
+# - 마이너스 기호 깨짐 처리
+plt.rcParams["axes.unicode_minus"] = False

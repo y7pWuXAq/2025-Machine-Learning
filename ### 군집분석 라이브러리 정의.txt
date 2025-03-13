@@ -1,0 +1,53 @@
+### 군집분석 라이브러리 정의
+# - 데이터를 읽기 위한 라이브러리
+import pandas as pd
+
+# - 수치 계산 라이브러리
+import numpy as np
+
+# - 시각화 라이브러리
+import matplotlib.pyplot as plt
+
+# - 히트맵 라이브러리
+import seaborn as sns
+
+# - 데이터 분류 라이브러리
+from sklearn.model_selection import train_test_split
+
+### 모델 라이브러리
+# - KMeans 모델 라이브러리
+from sklearn.cluster import KMeans
+
+# - PCA 라이브러리 정의
+from sklearn.decomposition import PCA
+
+# - DBSCAN 라이브러리 정의
+from sklearn.cluster import DBSCAN
+
+# - 데이터 스케일링 라이브러리
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import RobustScaler
+
+# 하이퍼파라메터 튜닝 모델(클래스) 정의하기
+from sklearn.model_selection import GridSearchCV
+
+### 평가 라이브러리 정의
+# - 분류 평가(군집분석) 라이브러리
+from sklearn.metrics import silhouette_score, adjusted_rand_score
+
+# - 분류 평가 라이브러리(정답을 알고 있는 경우에만 해당)
+from sklearn.metrics import accuracy_score, confusion_matrix
+
+
+### 경고(오류는 아님) 메시지 없애기
+# - 사이킷런 버전에 따라 오류가 아니니 안내(경고)메시지가 자주 나타남
+# - 안내(경고) 메시지 없이 실행할 수 있도록 처리
+from sklearn import set_config
+set_config(display="text")
+
+# - 한글처리
+plt.rc("font", family="Malgun Gothic")
+
+# - 마이너스 기호 깨짐 처리
+plt.rcParams["axes.unicode_minus"] = False

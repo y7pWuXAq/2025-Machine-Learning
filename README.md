@@ -180,7 +180,7 @@ from sklearn.neighbors import KNeighborsClassifier
     - 데이터 전처리 및 가공 단계에서 처리
     - 섞는다는 의미 "split" 이라고 함
     <br>
-    
+
     ```py
     plt.title("훈련도 데이터와 산점도 데이터 시각화")
     plt.scatter(train_input[ : ,0], train_input[: , 1], color="yellowgreen", label ="훈련 데이터")
@@ -192,7 +192,7 @@ from sklearn.neighbors import KNeighborsClassifier
     plt.show()
     ```
 
-    <br><br>
+    <br>
     - 편향해소를 위한 데이터 섞기
 
     ![편향해소데이터섞기](https://raw.githubusercontent.com/y7pWuXAq/2025-Machine-Learning/refs/heads/main/images/d01_편향해소랜덤섞기.png)

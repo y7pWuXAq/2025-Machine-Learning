@@ -191,6 +191,8 @@ from sklearn.neighbors import KNeighborsClassifier
     plt.show()
     ```
     <br>
+    - 편향해소를 위한 데이터 섞기
+    
     ![편향해소데이터섞기](https://raw.githubusercontent.com/y7pWuXAq/2025-Machine-Learning/refs/heads/main/images/d01_편향해소랜덤섞기.png)
 
     - [KNN_훈련_및_테스트_예제](https://github.com/y7pWuXAq/2025-Machine-Learning/blob/main/day02/01_KNN_훈련_및_테스트_데이터구성하기.ipynb)
@@ -276,7 +278,7 @@ from sklearn.neighbors import KNeighborsClassifier
     - x축 : 이웃의 갯수, y축 : 훈련 및 테스트 정확도
     - 훈련 정확도 선과 테스트 정확도 선을 하나의 그래프에 그려서 비교
     <br>
-    
+
     ![테스트정확도비교](https://raw.githubusercontent.com/y7pWuXAq/2025-Machine-Learning/refs/heads/main/images/d03_이웃갯수에따른데이터정확도비교.png)
 
 ##### 최종 평가하기

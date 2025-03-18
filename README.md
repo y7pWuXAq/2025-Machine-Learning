@@ -191,7 +191,7 @@ from sklearn.neighbors import KNeighborsClassifier
     plt.show()
     ```
     <br>
-    ![편향해소데이터섞기](https://github.com/y7pWuXAq/2025-Machine-Learning/blob/main/images/d01_편향해소랜덤섞기.png)
+    ![편향해소데이터섞기](https://raw.githubusercontent.com/y7pWuXAq/2025-Machine-Learning/refs/heads/main/images/d01_편향해소랜덤섞기.png)
 
     - [KNN_훈련_및_테스트_예제](https://github.com/y7pWuXAq/2025-Machine-Learning/blob/main/day02/01_KNN_훈련_및_테스트_데이터구성하기.ipynb)
 
@@ -373,7 +373,7 @@ b = lr.intercept_
 ```
 <br>
 
-![테스트정확도비교](https://raw.githubusercontent.com/y7pWuXAq/2025-Machine-Learning/refs/heads/main/images/d03_회귀분석선형회귀모델.png)
+![회귀분석선형회귀모델](https://raw.githubusercontent.com/y7pWuXAq/2025-Machine-Learning/refs/heads/main/images/d03_회귀분석선형회귀모델.png)
 <br>
 
 ##### (곡선) 다항 회귀모델로 적용하기
